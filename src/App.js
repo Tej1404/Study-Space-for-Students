@@ -11,6 +11,10 @@ import Cse from './components/Timetables/Cse';
 import Civil from './components/Timetables/Civil';
 import Eee from './components/Timetables/Eee';
 import Mechanical from './components/Timetables/Mechanical';
+import Notes3rdsem from './components/Notes3rdsem';
+import Notes4thsem from './components/Notes4thsem';
+import Notes5thsem from './components/Notes5thsem';
+import clgspace from "./images/college_space_icon.png"
 
 function App() {
   return (
@@ -18,7 +22,10 @@ function App() {
      {/* <Home/> */}
      {/* <Timetable /> */}
      <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white">
-        <a className="navbar-brand" to="#">Navbar</a>
+        <a className="navbar-brand" to="#">
+          <img src={clgspace} style={{width:"25%"}}/>
+          Study Space
+        </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -52,6 +59,9 @@ function App() {
         <Route path="/notes" element={<Navigate replace to="1stsemnotes"></Navigate>}/>
         <Route path='/notes/1stsemnotes' element={<Notes1stsem/>}/>
         <Route path='/notes/2ndsemnotes' element={<Notes2ndsem/>}/>
+        <Route path="/notes/3rdsemnotes" element={<Notes3rdsem/>}/>
+        <Route path="/notes/4thsemnotes" element={<Notes4thsem/>}/>
+        <Route path="/notes/5thsemnotes" element={<Notes5thsem/>}/>
       </Route>
       <Route path='/timetable' element={<Timetable/>}>
           <Route path="cse" element={<Cse />}></Route>

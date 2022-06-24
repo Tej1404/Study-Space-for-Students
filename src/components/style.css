@@ -13,6 +13,18 @@
     background-color: aquamarine;
     background-size: auto;
 }
+.semTitle{
+  font-family: "Avanta Garde";
+  /* font-family: "https://www.behance.net/gallery/32938133/Audrey-FREE-FONT/modules/209073397"; */
+  color: #7410e7;
+}
+.home{
+  box-shadow: 3px 3px 3px 6px rgb(182, 190, 216);
+}
+.para{
+  font-family: 'Open Sans', sans-serif;
+  font-size:120%
+}
 .popup-box {
     position: fixed;
     background: #00000050;
@@ -20,6 +32,9 @@
     height: 100%;
     top: 0;
     left: 0;
+  }
+  .text-dec{
+    text-decoration: none;
   }
   
   .box {

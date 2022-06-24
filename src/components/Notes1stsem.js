@@ -13,21 +13,21 @@ function Notes1stsem(){
                     unit_id:"1",
                     unit_name:"Unit - 1",
                     desc:"Click here to view unit 1",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 },
                 {
                     pic:notes,
                     unit_id:"2",
                     unit_name:"Unit - 2",
                     desc:"Click here to view unit 2",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 },
                 {
                     pic:notes,
                     unit_id:"3",
                     unit_name:"Unit - 3",
                     desc:"Click here to view unit 3",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 }
             ]
         },
@@ -40,21 +40,21 @@ function Notes1stsem(){
                     unit_id:"1",
                     unit_name:"Unit - 1",
                     desc:"Click here to view unit 1",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 },
                 {
                     pic:notes,
                     unit_id:"2",
                     unit_name:"Unit - 2",
                     desc:"Click here to view unit 2",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 },
                 {
                     pic:notes,
                     unit_id:"3",
                     unit_name:"Unit - 3",
                     desc:"Click here to view unit 3",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 }
             ]
         },
@@ -67,28 +67,30 @@ function Notes1stsem(){
                     unit_id:"1",
                     unit_name:"Unit - 1",
                     desc:"Click here to view unit 1",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 },
                 {
                     pic:notes,
                     unit_id:"2",
                     unit_name:"Unit - 2",
                     desc:"Click here to view unit 2",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 },
                 {
                     pic:notes,
                     unit_id:"3",
                     unit_name:"Unit - 3",
                     desc:"Click here to view unit 3",
-                    u_link:"#"
+                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
                 }
             ]
         },
     ]
+    // sessionStorage.setItem("semTitle","1st Semister")
     
     return(
         <div className='container text-center'>
+            <p className='display-5 semTitle'>1st Semister Notes</p>
             <div className="accordion" id="accordianexample" >
             {
                 year_1.map((subject,ind)=>
@@ -109,7 +111,7 @@ function Notes1stsem(){
                                                 <div className="card-body text-center">
                                                     <h5 className="card-title">{eachunit.unit_name}</h5>
                                                     <p className="card-text">{eachunit.desc}</p>
-                                                    <a href={eachunit.u_link} className="btn btn-primary">View</a>
+                                                    <a href={eachunit.u_link} className="btn btn-primary" target={"_blank"}>View</a>
                                                 </div>
                                             </div>
                                         </div>    

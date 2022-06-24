@@ -1,7 +1,6 @@
 import notes from '../images/Notes.svg'
 import "./style.css"
-function Notes2ndsem(){
-
+function Notes4thsem(){
     let year_1=[
         {
             subject_id:"LAAC",
@@ -19,7 +18,7 @@ function Notes2ndsem(){
                     unit_id:"2",
                     unit_name:"Unit - 2",
                     desc:"Click here to view unit 2",
-                    u_link:"https://docs.google.com/presentation/d/1N_Y62mKoB4wyUpq8p7gyb_pPgqKwUGbR/edit#slide=id.p1"
+                    u_link:"https://docs.google.com/presentation/d/1qYqWxv3eVvrk6YvkoLswn8PerrH7vfC9/edit#slide=id.p1"
                 },
                 {
                     pic:notes,
@@ -85,11 +84,9 @@ function Notes2ndsem(){
             ]
         },
     ]
-    // sessionStorage.setItem("semTitle","2nd Semister")
-
-    return(
+    return (
         <div className='container text-center'>
-            <p className='display-5 semTitle'>2nd Semister Notes</p>
+            <p className='display-5 semTitle'>4th Semister Notes</p>
             <div className="accordion" id="accordianexample" >
             {
                 year_1.map((subject,ind)=>
@@ -126,5 +123,4 @@ function Notes2ndsem(){
         </div>
     )
 }
-
-export default Notes2ndsem
+export default Notes4thsem
