@@ -21,7 +21,8 @@ function App() {
     <div >
      {/* <Home/> */}
      {/* <Timetable /> */}
-     <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+     <nav className="navbar navbar-expand-md navbar-dark bg-dark text-white">
+        <div className='container-fluid'>
         <a className="navbar-brand" to="#">
           <img src={clgspace} style={{width:"25%"}}/>
           Study Space
@@ -47,6 +48,7 @@ function App() {
           </ul>
 
         </div>
+        </div>
       </nav>
      {/* <Footer/> */}
      {/* Routes */}
@@ -64,11 +66,13 @@ function App() {
         <Route path="/notes/5thsemnotes" element={<Notes5thsem/>}/>
       </Route>
       <Route path='/timetable' element={<Timetable/>}>
-          <Route path="cse" element={<Cse />}></Route>
-          <Route path="ece" element={<Ece />}></Route>
-          <Route path="eee" element={<Eee />}></Route>
-          <Route path="civil" element={<Civil />}></Route>
-          <Route path="mechanical" element={<Mechanical />}></Route>
+          {/* <Route path="cse" element={<Cse />}></Route> */}
+          <Route path="1stsem" element={<Cse />}></Route>
+          {/* <Route path="ece" element={<Ece />}></Route> */}
+          <Route path="2ndsem" element={<Ece />}></Route>
+          <Route path="3rdsem" element={<Eee />}></Route>
+          <Route path="4thsem" element={<Civil />}></Route>
+          <Route path="5thsem" element={<Mechanical />}></Route>
       </Route>
      </Routes>
     </div>
