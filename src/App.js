@@ -72,7 +72,7 @@ function App() {
       {/* <Footer/> */}
       {/* Routes */}
       <Routes>
-        <Route path="" element={<Navigate replace to="home"></Navigate>} />
+        <Route path="/" element={<Navigate replace to="home"></Navigate>} />
         <Route path="/home" element={<Home />}></Route>
         <Route path="/dummy" element={<Dummy />}></Route>
 
