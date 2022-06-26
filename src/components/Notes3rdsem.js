@@ -93,6 +93,7 @@ function Notes3rdsem() {
       ],
     },
   ];
+  sessionStorage.setItem("semTitle","3rd Semester")
   return (
     <div className="container text-center">
       <p className="display-5 semTitle">3rd Semester Notes</p>

@@ -94,7 +94,7 @@ function Notes1stsem() {
       ],
     },
   ];
-  // sessionStorage.setItem("semTitle","1st Semister")
+  sessionStorage.setItem("semTitle","1st Semester")
 
   return (
     <div className="container text-center">
